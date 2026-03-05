@@ -14,7 +14,7 @@ from langchain_core.runnables import RunnableParallel, RunnablePassthrough, Runn
 from langchain_core.output_parsers import StrOutputParser
 
 load_dotenv()
-
+os.environ['LANGCHAIN_PROJECT']='RAG Chatbot'
 PDF_PATH = "islr.pdf"  # <- change to your file
 
 # ----------------- helpers (not traced individually) -----------------
